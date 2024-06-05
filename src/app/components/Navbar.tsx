@@ -34,7 +34,7 @@ export const Navbar = () => {
             </ul>
         </div>
         <div className="navbar-end">
-                <a className="btn btn-outline mx-2 text-white">Logowanie</a>
+                <Link href="/login" className="btn btn-outline mx-2 text-white">Logowanie</Link>
                 <a className="btn btn-outline text-white">Rejestracja</a>
         </div>
         </div>

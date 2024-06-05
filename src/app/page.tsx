@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="">
-      <div className="hero min-h-[70vh] max-h-[70vh]" style={{backgroundImage: 'url(https://c8.alamy.com/compfr/ebtt0d/l-homme-une-femme-parlant-dans-un-bureau-ebtt0d.jpg)'}}>
+      <div className="hero min-h-[80vh] max-h-[80vh]" style={{backgroundImage: 'url(https://c8.alamy.com/compfr/ebtt0d/l-homme-une-femme-parlant-dans-un-bureau-ebtt0d.jpg)'}}>
         <div className="hero-overlay bg-opacity-70"></div>
         <div className="hero-content text-left">
           <div className="max-w-2xl">
@@ -23,7 +23,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="hero flex-col justify-center min-h-[70vh] max-h-[70vh] bg-base-100 p-5">
+      <div className="hero flex-col justify-center min-h-[80vh] max-h-[80vh] bg-base-100 p-5">
   <div className="hero-content text-left">
   <div className="max-w-7xl">
   <h2 className="text-4xl font-bold py-8">Uzytkownicy ostatnio wybierają</h2>
@@ -68,7 +68,7 @@ export default function Home() {
   
 </div>
 
-<div className="hero flex justify-center min-h-[70vh]  bg-base-200 p-2">
+<div className="hero flex justify-center min-h-[80vh] max-h-[80vh]  bg-base-200 p-2">
   <div className="hero-content flex-col lg:flex-row-reverse">
     <img src="https://iconeyecare.com/wp-content/uploads/sites/2/2018/12/workplace-vision-problems-scaled.jpg" className="max-w-3xl rounded-lg shadow-2xl" />
     <div className="max-w-lg max-h-sm">
@@ -86,10 +86,10 @@ export default function Home() {
 </div>
 
 <div className=" flex bg-base-100 justify-center ">
-      <div className="hero flex justify-center  min-h-[70vh] max-h-[70vh] min-w-[80vh] max-w-[80vh]">
+      <div className="hero flex justify-center  min-h-[80vh] max-h-[80vh] min-w-[80vh] max-w-[80vh]">
       <div className="mockup-phone border bg-base-300 justify-center">
               <div className="camera "></div> 
-              <div className="display max-h-[70vh] max-w-[30vh] ">
+              <div className="display max-h-[80vh] max-w-[80vh] ">
                 <div className="flex justify-center bg-base-200">
                 <img src="https://www.spt.com.pl/wp-content/uploads/2023/02/montaz-kanapy-pila-1-472x1024.jpg" className="object-cover "></img>
                 </div>
@@ -108,7 +108,7 @@ export default function Home() {
       </div>
       </div>
 
-      <div className="hero flex justify-center min-h-[70vh] max-h-[70vh]  bg-base-200 p-5">
+      <div className="hero flex justify-center min-h-[80vh] max-h-[80vh]  bg-base-200 p-5">
             <div className="hero-content text-center">
           <div className="max-w-md">
             <p className="py-6">The web task board connected to Discord streamlines project management for teams. Integrated within Discord servers, it offers customizable task boards where users can assign tasks, track progress, and communicate seamlessly. With real-time updates and flexible integrations, it enhances productivity and collaboration within Discord's familiar environment.</p>
