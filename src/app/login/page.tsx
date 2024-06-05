@@ -1,4 +1,6 @@
 "use client"
+import Link from 'next/link';
+import { redirect } from 'next/navigation';
 import React, { MouseEventHandler, useState } from 'react';
 
 export default function LoginPage() {
@@ -12,7 +14,8 @@ export default function LoginPage() {
 
     localStorage.setItem('login', login);
     // Simulate login process (replace with your actual logic)
-    alert('Login successful!');
+    //
+    window.location.href = "/"
   };
 
   return (
