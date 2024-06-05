@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Home() {
+export default function Home()  {
   return (
     <main className="">
       <div className="hero min-h-[80vh] max-h-[80vh]" style={{backgroundImage: 'url(https://c8.alamy.com/compfr/ebtt0d/l-homme-une-femme-parlant-dans-un-bureau-ebtt0d.jpg)'}}>
@@ -15,7 +15,7 @@ export default function Home() {
             </label>
             <div className="join my-2">
             <p className="font-bold join-item mx-2">Popularne: </p>
-              <button className="btn btn-xs btn-outline text-white join-item mx-2">Projektowanie Stron Internetowych</button>
+              <Link href="/main" className="btn btn-xs btn-outline text-white join-item mx-2">Projektowanie Stron Internetowych</Link>
               <button className="btn btn-xs btn-outline text-white join-item mx-2">WordPress</button>
               <button className="btn btn-xs btn-outline text-white join-item mx-2">Projektowanie Loga</button>
               <button className="btn btn-xs btn-outline text-white join-item mx-2">Serwis AI</button>

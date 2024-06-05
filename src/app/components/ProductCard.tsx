@@ -19,7 +19,7 @@ interface Product {
   
   const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
     return (
-      <Link href="/" className="max-w-sm hover:bg-gray-600 hover:border-gray-300 bg-white border border-gray-200 rounded-t-xl shadow dark:bg-gray-800 dark:border-gray-700">
+      <Link href={`/${product.id}`} className="max-w-sm hover:bg-gray-600 hover:border-gray-300 bg-white border border-gray-200 rounded-t-xl shadow dark:bg-gray-800 dark:border-gray-700">
         <div  id="slide1" className="carousel-item relative rounded-t-xl overflow-hidden">
         <img 
           className="rounded-t-lg w-full h-48 object-cover" 
