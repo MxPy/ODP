@@ -286,7 +286,7 @@ ordersInQueue: 5
 }
 ];
 
-  
+
 
 export default function Home({ params }: { params: { offer: string } }) {
   const [selectedPackageIndex, setSelectedPackageIndex] = useState(0);
@@ -301,6 +301,23 @@ export default function Home({ params }: { params: { offer: string } }) {
  
   
   const service = services.find((service) => service.id === parseInt(id));
+
+  const handleBasket = (event: any) => {
+    const loginValue = localStorage.getItem('login');
+    if (loginValue) {
+      let prices: number[] = [];
+      const storedPrices = localStorage.getItem('items');
+      if (storedPrices) {
+        prices = JSON.parse(storedPrices);
+      }
+      prices.push(service.packages[selectedPackageIndex].price);
+      localStorage.setItem('items', JSON.stringify(prices));
+      window.location.href = `/main` ;
+    }else{
+      window.location.href = `/login`
+    }
+    
+  };
 
   if (!service) {
     // Handle the case where the 'offer' query parameter is invalid or not found
@@ -338,7 +355,7 @@ export default function Home({ params }: { params: { offer: string } }) {
       </div>
 
       {/* sale window being */}
-      <div className='content-center z-2 fixed top-1/2 right-20 transform -translate-y-1/2'>
+      <div className='content-center z-2 fixed top-1/2 right-14 transform -translate-y-1/2'>
         <div className="card glass shadow-xl max-w-md">
           <div className="card-body">
             <div className="flex justify-between items-center mb-4">
@@ -370,7 +387,7 @@ export default function Home({ params }: { params: { offer: string } }) {
               {selectedPackageIndex === 0 && <p className="text-3xl font-bold">{service.packages[0].price} zł</p>}
               {selectedPackageIndex === 1 && <p className="text-3xl font-bold">{service.packages[1].price} zł</p>}
               {selectedPackageIndex === 2 && <p className="text-3xl font-bold">{service.packages[2].price} zł</p>}
-              <button className="btn glass [--glass-opacity:0.8] [--glass-blur:30px] font-bold text-black mx-1 btn-outline text-lg  btn-block mt-4">Zamów</button>
+              <button onClick={handleBasket} className="btn glass [--glass-opacity:0.8] [--glass-blur:30px] font-bold text-black mx-1 btn-outline text-lg  btn-block mt-4">Zamów</button>
             </div>
           </div>
         </div>

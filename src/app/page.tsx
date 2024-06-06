@@ -29,33 +29,33 @@ export default function Home()  {
   <h2 className="text-4xl font-bold py-8">Uzytkownicy ostatnio wybierają</h2>
     <div className="relative">
       <div className="carousel carousel-center max-w-l p-4 space-x-10 bg-neutral rounded-box">
-          <div  id="slide1" className="carousel-item relative rounded-box overflow-hidden">
-            <img src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" alt="Avatar" className="object-cover w-full h-full" />
-            <div className="absolute w-full py-2.5 bottom-0 inset-x-0 glass text-white text-xl text-center leading-4">Artyści AI</div>
+          <div  id="slide1" className="carousel-item relative  rounded-box overflow-hidden">
+            <img src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" alt="Avatar" className="object-cover  w-full h-full" />
+            <div className="absolute w-full py-2.5 bottom-0 inset-x-0 glass hover:bg-slate-100 text-white text-xl text-center leading-4">Artyści AI</div>
         </div>
           <div className="carousel-item relative  rounded-box overflow-hidden">
             <img src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" alt="Avatar" className="object-cover w-full h-full" />
-            <div className="absolute w-full py-2.5 bottom-0 inset-x-0 glass text-white text-xl text-center leading-4">Projektowanie Logo</div>
+            <div className="absolute w-full py-2.5 bottom-0 inset-x-0 glass hover:bg-slate-100 text-white text-xl text-center leading-4">Projektowanie Logo</div>
           </div>
           <div className=" carousel-item relative  rounded-box overflow-hidden">
             <img src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" alt="Avatar" className="object-cover w-full h-full" />
-            <div className="absolute w-full py-2.5 bottom-0 inset-x-0 glass text-white text-xl text-center leading-4">Lektor</div>
+            <div className="absolute w-full py-2.5 bottom-0 inset-x-0 glass hover:bg-slate-100 text-white text-xl text-center leading-4">Lektor</div>
           </div>
           <div className="carousel-item relative  rounded-box overflow-hidden">
             <img src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" alt="Avatar" className="object-cover w-full h-full" />
-            <div className="absolute w-full py-2.5 bottom-0 inset-x-0 glass text-white text-xl text-center leading-4">Wnoszenie kanapy na 4 piętro</div>
+            <div className="absolute w-full py-2.5 bottom-0 inset-x-0 glass hover:bg-slate-100 text-white text-xl text-center leading-4">Wnoszenie kanapy na 4 piętro</div>
           </div>
           <div className="carousel-item relative  rounded-box overflow-hidden">
             <img src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" alt="Avatar" className="object-cover w-full h-full" />
-            <div className="absolute w-full py-2.5 bottom-0 inset-x-0 glass text-white text-xl text-center leading-4">Minecraft</div>
+            <div className="absolute w-full py-2.5 bottom-0 inset-x-0 glass hover:bg-slate-100 text-white text-xl text-center leading-4">Minecraft</div>
           </div>
           <div className="carousel-item relative  rounded-box overflow-hidden">
             <img src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" alt="Avatar" className="object-cover w-full h-full" />
-            <div className="absolute w-full py-2.5 bottom-0 inset-x-0 glass text-white text-xl text-center leading-4">Okładki Książek</div>
+            <div className="absolute w-full py-2.5 bottom-0 inset-x-0 glass hover:bg-slate-100 text-white text-xl text-center leading-4">Okładki Książek</div>
           </div>
         <div id="slide2" className="carousel-item relative  rounded-box overflow-hidden">
             <img src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" alt="Avatar" className="object-cover w-full h-full" />
-            <div className="absolute w-full py-2.5 bottom-0 inset-x-0 glass text-white text-xl text-center leading-4">Ilustracje</div>
+            <div className="absolute w-full py-2.5 bottom-0 inset-x-0 glass hover:bg-slate-100 text-white text-xl text-center leading-4">Ilustracje</div>
           </div>
       </div>
       <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">

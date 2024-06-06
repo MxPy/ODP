@@ -15,7 +15,7 @@ export default function LoginPage() {
     localStorage.setItem('login', login);
     // Simulate login process (replace with your actual logic)
     //
-    window.location.href = "/"
+    window.location.href = "/main"
   };
 
   return (
